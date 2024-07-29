@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.div1 {
+    flex: 1;
+}
+
+.div1{
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.div1 h1{
+    font-size: 50px;
+}
+
+.shapes {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+}
+
+.shape-img {
+    display: block;
+}
+
+.inner-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+.section1 p{
+    font-size: 15px;
+    margin-top: 30px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+*.buttons{
+    
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.buttons button:nth-child(2) {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2) .button_download span {
+    color: blue;
+}
+
+.buttons button:nth-child(2) svg path {
+    fill: blue; 
+}
+
+
+    
+.buttons .button_download{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.button_download1{
+    color: white;
+}
+.buttons button{
+    margin: 0 8px;
+    background-color: rgb(11, 11, 247);
+    border-radius: 12px;
+    padding: 16px 30px;
+    margin-left: -5%;
+}
