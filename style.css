@@ -52,19 +52,26 @@ html, body {
     text-align: right;
 }
 .light-img {
-    top: 705;
+    top: 20%;
     z-index: 1;
 }
 
 .shape-img {
-    top: 30%;
+    rotate: -180;
+    top: 40%;
     z-index: 2;
 }
 
 .inner-img {
-    right: 150%;
-    top: 30%;
+    right: 20%;
+    top: 40%;
     z-index: 3;
+}
+.frames{
+    position: absolute;
+    margin-left: 500px;
+    z-index: 4;
+    top: 120%;
 }
 .light-img, .shape-img {
     height: 100vh;
@@ -84,22 +91,43 @@ html, body {
 }
 .buttons {
     display: flex;
-    gap: 3rem;
-}
-
-*.buttons{
-    
+    gap: 6rem;
     margin-top: 30px;
     margin-left: 10px;
 }
 
+
+
+.buttons button {
+    background-color: rgb(11, 11, 247);
+    border-radius: 12px;
+    padding: 1px 42px;
+    margin-left: -5%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 3px;
+    color: white;
+}
+
+.buttons button:nth-child(1) .button_download span {
+    color: white;
+}
+
+.buttons button:nth-child(1) svg path {
+    fill: white; 
+}
 .buttons button:nth-child(2) {
     background-color: white;
     color: blue;
     border: 2px solid blue;
-    padding: 5px 52px;
+    padding: 5px 42px;
     font-size: 16px;
-    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .buttons button:nth-child(2) .button_download span {
@@ -110,41 +138,13 @@ html, body {
     fill: blue; 
 }
 
-
-
-    
-    
-    
-.buttons .button_download{
-    
-    display: flex;
+.buttons .button_download {
+    display: flex;  
     justify-content: center;
     align-items: center;
-    justify-items: space-between;
     gap: 5px;
     color: white;
 }
-
-.buttons button{
-    color: white;
-    gap: 1rem;
-    margin: 0 8px;
-    background-color: rgb(11, 11, 247);
-    border-radius: 12px;
-    padding: 5px 52px;
-    margin-left: -5%;
-}
-
-.icons {
-    margin-left: 200px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 20px; /* Adjust spacing as needed */
-}
-
-.icon-img, .icon1-img, .icon2-img {
-    width: 100px;
-    height: 100px;
+.buttons{
+    gap: 2rem;
 }
