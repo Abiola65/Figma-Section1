@@ -1,19 +1,17 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
     html, body {
         height: 100%;
-        /* overflow: hidden; */
     }
 
     .flex-container {
         display: flex;
         height: 100vh;
-
     }
 
     .div1 {
@@ -40,7 +38,6 @@
     .shape-img, .inner-img, .light-img{
         position: absolute;
         margin-bottom: 300px;
-        /* top: 100; */
         right: 0%;
         width: 1200%;
         height: 100%;
@@ -54,7 +51,6 @@
     }
 
     .shape-img {
-        rotate: -180;
         top: 40%;
         z-index: 2;
     }
@@ -71,7 +67,6 @@
         top: 120%;
     }
     .light-img, .shape-img {
-        height: 100vh;
         object-fit: cover;
         width: 1200%;
     }
@@ -141,5 +136,5 @@
         color: white;
     }
     .buttons{
-        gap: 6rem;
+        gap: 4.5rem;
     }
